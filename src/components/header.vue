@@ -2,8 +2,8 @@
   <div class="header">
     <a class="logo" href="/"><img height="44" src="../common/images/0l6l1y8b.png" alt="0618"></a>
     <div class="tool-bar">
-      <span class="tool-item">Aa</span>
-      <span class="tool-item">FU</span>
+      <span class="tool-item"></span>
+      <span class="tool-item"></span>
     </div>
     <div class="container">
       <ul class="nav">
