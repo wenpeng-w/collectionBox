@@ -2,15 +2,14 @@
   <div class="header">
     <a class="logo" href="/"><img height="44" src="../common/images/0l6l1y8b.png" alt="0618"></a>
     <div class="tool-bar">
-      <span class="tool-item"></span>
-      <span class="tool-item"></span>
+      <a href="https://github.com/wenpeng-w" class="tool-item">GitHub</a>
     </div>
     <div class="container">
       <ul class="nav">
         <li class="nav-item"><router-link to="/home">首页</router-link></li>
-        <li class="nav-item"><router-link to="/home">文章</router-link></li>
-        <li class="nav-item"><router-link to="/home">照片</router-link></li>
-        <li class="nav-item"><router-link to="/home">社区</router-link></li>
+        <li class="nav-item"><router-link to="/home">规范</router-link></li>
+        <li class="nav-item"><router-link to="/home">H5</router-link></li>
+        <li class="nav-item"><router-link to="/home">主页</router-link></li>
       </ul>
     </div>
   </div>
@@ -43,6 +42,20 @@ export default {
   }
   .tool-bar {
     float: right;
+    .tool-item {
+      display: block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 10px;
+      margin: 16px 20px 0 0;
+      border: 1px solid #24292e;
+      border-radius: 2px;
+      color: #24292e;
+      &:hover {
+        color: #ffffff;
+        background-color: #24292e;
+      }
+    }
   }
   .nav {
     margin-top: 10px;
