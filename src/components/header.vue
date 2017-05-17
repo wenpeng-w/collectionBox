@@ -6,7 +6,7 @@
     </div>
     <div class="container">
       <ul class="nav">
-        <li class="nav-item"><router-link to="/home">首页</router-link></li>
+        <li class="nav-item"><router-link to="/collection">首页</router-link></li>
         <li class="nav-item"><router-link to="/home">规范</router-link></li>
         <li class="nav-item"><router-link to="/home">H5</router-link></li>
         <li class="nav-item"><router-link to="/home">主页</router-link></li>
@@ -30,7 +30,8 @@ export default {
   .header {
     position: relative;
     width: 100%;
-    height: 60px;
+    height: 70px;
+    margin-bottom: 15px;
     background: #ffffff;
     border-bottom: 1px solid #f0f0f0;
     overflow: hidden;
@@ -39,6 +40,7 @@ export default {
     float: left;
     height: 44px;
     padding: 8px 10px;
+    margin-top: 5px;
   }
   .tool-bar {
     float: right;
@@ -47,7 +49,7 @@ export default {
       height: 26px;
       line-height: 26px;
       padding: 0 10px;
-      margin: 16px 20px 0 0;
+      margin: 21px 20px 0 0;
       border: 1px solid #24292e;
       border-radius: 2px;
       color: #24292e;
@@ -58,7 +60,7 @@ export default {
     }
   }
   .nav {
-    margin-top: 10px;
+    margin-top: 15px;
     height: 40px;
     line-height: 40px;
     .nav-item {

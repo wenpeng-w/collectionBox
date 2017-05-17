@@ -1,0 +1,18 @@
+{
+  "hotSpots": {
+    "hotItem": [
+      {
+        "description": "Vue.js渐进式JavaScript框架",
+        "image": "http://oq3m63ave.bkt.clouddn.com/0618/Vuejs1.png"
+      },
+      {
+        "description": "webpack前端资源加载、打包工具",
+        "image": "http://oq3m63ave.bkt.clouddn.com/0618/webpack.png"
+      },
+      {
+        "description": "Vue.js仿饿了么外卖App",
+        "image": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png"
+      }
+    ]
+  }
+}
