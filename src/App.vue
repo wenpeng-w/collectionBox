@@ -22,7 +22,6 @@ export default {
     this.$http.get('/api/collection').then((response) => {
       response = response.body
       if (response.errno === ERR_OK) {
-        console.log(response)
         this.hotSpots = Object.assign({}, this.hotSpots, response.data)
       }
     })

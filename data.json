@@ -13,6 +13,24 @@
         "description": "Vue.js仿饿了么外卖App",
         "image": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png"
       }
+    ],
+    "cards": [
+      {
+        "cardUrl": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png",
+        "cardImg": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png"
+      },
+      {
+        "cardUrl": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png",
+        "cardImg": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png"
+      },
+      {
+        "cardUrl": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png",
+        "cardImg": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png"
+      },
+      {
+        "cardUrl": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png",
+        "cardImg": "http://oq3m63ave.bkt.clouddn.com/0618/eleme.png"
+      }
     ]
   }
 }
