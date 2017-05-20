@@ -18,7 +18,11 @@
       </ul>
     </div>
     <div class="card">
-      <div v-for="card in hotSpots.cards" class="card-item radius"><a :href="card"><img :src="card" alt=""></a></div>
+      <div v-for="(card, index) in hotSpots.cards" class="card-item radius">
+        <a :href="hotSpots.cards[index].cardUrl">
+          <img :src="hotSpots.cards[index].cardImg" alt="">
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -99,6 +103,7 @@
         height: 40px;
         line-height: 40px;
         color: #fff;
+        font-size: 14px;
         span {
           display: block;
           padding: 0 15px;
@@ -148,11 +153,14 @@
     .card-item {
       float: left;
       width: 24%;
-      height: 100px;
       margin-right: 1.333334%;
       background-color: #f5f5f5;
       &:last-child {
         margin-right: 0;
+      }
+      img {
+        width: 100%;
+        vertical-align: top;
       }
     }
   }
