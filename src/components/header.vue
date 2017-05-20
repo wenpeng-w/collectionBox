@@ -31,7 +31,6 @@ export default {
     position: relative;
     width: 100%;
     height: 70px;
-    margin-bottom: 15px;
     background: #ffffff;
     border-bottom: 1px solid #f0f0f0;
     overflow: hidden;
