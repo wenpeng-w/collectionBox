@@ -28,10 +28,13 @@ export default {
   @import url("../common/less/index.less");
 
   .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     width: 100%;
     height: 70px;
-    background: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid #f0f0f0;
     overflow: hidden;
   }
