@@ -8,7 +8,6 @@
 export default {
   methods: {
     goTop () {
-//      let pH = document.documentElement.clientHeight
       document.documentElement.scrollTop = document.body.scrollTop = 0
     }
   }
