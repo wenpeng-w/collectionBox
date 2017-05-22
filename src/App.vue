@@ -2,11 +2,15 @@
   <div>
     <v-header></v-header>
     <router-view :hotSpots="hotSpots"></router-view>
+    <v-footer></v-footer>
+    <go-top></go-top>
   </div>
 </template>
 
 <script>
 import Header from './components/header'
+import Footer from './components/footer'
+import GoTop from './components/goTop'
 
 const ERR_OK = 0
 
@@ -27,7 +31,9 @@ export default {
     })
   },
   components: {
-    'v-header': Header
+    'v-header': Header,
+    'v-footer': Footer,
+    GoTop
   }
 }
 </script>

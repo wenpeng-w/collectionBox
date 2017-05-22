@@ -36,17 +36,20 @@
                 <span class="name">{{ item.name }}</span>
                 <span class="time">{{ item.time | formatDate }}</span>
               </div>
-              <h2 class="title">{{ item.artTitle }}</h2>
+              <h2 class="title"><a :href="item.artUrl">{{ item.artTitle }}</a></h2>
               <p class="description">{{ item.artDesc }}</p>
               <div class="tag">
                 <span :class="'tag-c_' + index" v-for="(tag, index) in item.artTag" class="tag-a">{{ tag }}</span>
               </div>
             </div>
             <div v-if="item.artPic" class="pic">
-              <img :src="item.artPic" alt="">
+              <a :href="item.artUrl"><img :src="item.artPic" alt=""></a>
             </div>
           </li>
         </ul>
+        <div class="page-number">
+          <a href="javascript:void(0);" class="num prev-page">←</a><a v-for="(page, index) in 5" href="javascript:void(0);" class="num">{{ index + 1 }}</a><a href="javascript:void(0);" class="num prev-page">→</a>
+        </div>
       </div>
       <div class="sidebar">
         <div class="contact radius">
@@ -253,6 +256,7 @@
         padding-top: 16px;
         border-top: 1px solid #f0f0f0;
         .article-list {
+          margin-bottom: 30px;
           li {
             position: relative;
             margin: 0 0 16px;
@@ -283,11 +287,17 @@
                 }
               }
               .title {
-                margin-bottom: 4px;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 1.5;
-                color: rgba(0, 0, 0, 0.75);
+                a {
+                  display: block;
+                  margin-bottom: 4px;
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 1.5;
+                  color: rgba(0, 0, 0, 0.75);
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
               }
               .description {
                 margin: 0 0 8px;
@@ -346,6 +356,27 @@
             }
           }
         }
+        .page-number {
+          margin-bottom: 40px;
+          text-align: center;
+          .num {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            margin: 0 4px;
+            border: 1px solid rgba(102, 172, 172, 0.8);
+            border-radius: 4px;
+            text-align: center;
+            font-size: 13px;
+            transition: all 0.2s;
+            &:hover {
+              background-color: rgba(102, 172, 172, 0.6);
+              border-radius: 50%;
+              color: #ffffff;
+            }
+          }
+        }
       }
       .sidebar {
         float: left;
@@ -354,7 +385,7 @@
         .contact {
           position: relative;
           margin-bottom: 30px;
-          border: 1px solid #cccccc;
+          border: 1px solid #f0f0f0;
           .bg-img {
             width: 100%;
             img {
